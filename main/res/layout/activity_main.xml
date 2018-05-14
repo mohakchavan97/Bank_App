@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mohakchavan.bank_app.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/MA_TV_ACNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Account Number"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/MA_ED_ACNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Account Number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/MA_BTN_SBMT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="submit"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/MA_TV_NEWAC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Click to Create New Account" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/MA_TV_ALL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </ScrollView>
+
+</RelativeLayout>

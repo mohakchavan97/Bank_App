@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mohakchavan.bank_app.New_Account">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/NA_TV_NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/NA_ED_NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textCapSentences"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/NA_TV_SURNAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Surname"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/NA_ED_SURNAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Surname"
+            android:inputType="textCapSentences"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/NA_TV_AMT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Amount"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/NA_ED_AMT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="number|numberDecimal"
+            android:textSize="10pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/NA_BTN_CREATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="create"
+                android:textColor="@android:color/white" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="50dp" />
+
+            <Button
+                android:id="@+id/NA_BTN_CANCEL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="50dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="cancel"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

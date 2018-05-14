@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:weightSum="10"
+    tools:context="com.mohakchavan.bank_app.Fragment_1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
+            android:text="Name"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/F1_TV_NAME"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Hello"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
+            android:text="Balance"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/F1_TV_BAL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Hello"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</LinearLayout>
